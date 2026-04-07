@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mattias & Elaf — Bröllop</title>
+  <meta name="description" content="Wedding invitation for Moataz & Elaf" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
+  <meta name="theme-color" content="#b66a7a">
+
+</head>
+<body>
+  <div class="bg-aurora" aria-hidden="true"></div>
+  <div class="hearts" aria-hidden="true" id="hearts"></div>
+
+  <header class="hero" id="top">
+    <div class="hero-media" aria-hidden="true">
+      <div class="hero-video-wrap">
+        <video class="hero-video" autoplay muted loop playsinline preload="auto"
+               poster="assets/hero-bw.jpeg">
+          <source src="assets/hero.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="hero-dark"></div>
+      <div class="hero-grain"></div>
+    </div>
+
+    <div class="topbar">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text" data-i18n="brand">Inbjudan</span>
+      </a>
+
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button class="lang-btn active" type="button" data-lang="sv">SV</button>
+        <button class="lang-btn" type="button" data-lang="ar">AR</button>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span data-i18n="name_1">Moataz</span>
+        <span class="hero-amp" aria-hidden="true">&</span>
+        <span data-i18n="name_2">Elaf</span>
+      </h1>
+      <p class="hero-sub" data-i18n="hero_sub">LÖRDAG 20 JUNI 2026 · 19:00 · SÖDERTÄLJE</p>
+    </div>
+
+    <a class="scroll" href="#welcome" aria-label="Scroll">
+      <span class="scroll-dot"></span>
+    </a>
+  </header>
+
+  <main>
+
+    <!-- 2nd section: countdown -->
+    <section class="section countdown" id="countdown">
+      <div class="container">
+        <div class="section-title">
+          <div class="overline" data-i18n="count_overline">Nedräkning</div>
+          <h2 class="h2" data-i18n="count_title">Tills vi säger ja</h2>
+        </div>
+
+        <div class="countdown-card">
+          <div class="countdown-grid" aria-label="Countdown">
+            <div class="count-item">
+              <div class="count-heart" aria-hidden="true">❤</div>
+              <span class="count-num" id="cd_days">0</span>
+              <small class="count-label" data-i18n="count_days">Dagar</small>
+            </div>
+            <div class="count-item">
+              <div class="count-heart" aria-hidden="true">❤</div>
+              <span class="count-num" id="cd_hours">0</span>
+              <small class="count-label" data-i18n="count_hours">Timmar</small>
+            </div>
+            <div class="count-item">
+              <div class="count-heart" aria-hidden="true">❤</div>
+              <span class="count-num" id="cd_minutes">0</span>
+              <small class="count-label" data-i18n="count_minutes">Minuter</small>
+            </div>
+            <div class="count-item">
+              <div class="count-heart" aria-hidden="true">❤</div>
+              <span class="count-num" id="cd_seconds">0</span>
+              <small class="count-label" data-i18n="count_seconds">Sekunder</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3rd section: invitation (single language based on toggle) -->
+    <section class="section welcome" id="welcome">
+      <div class="container">
+        <div class="card card-wide">
+          <div class="card-header">
+            <div class="overline" data-i18n="welcome_overline">Välkommen</div>
+            <h2 class="h2" data-i18n="welcome_title">Vi vill fira med dig</h2>
+          </div>
+          <div class="card-body">
+            <p class="lead" data-i18n="inv_p1"></p>
+            <p data-i18n="inv_p2"></p>
+
+            <div class="inv-divider" aria-hidden="true"></div>
+
+            <p class="inv-heading" data-i18n="inv_fam_title"></p>
+            <p class="inv-center" data-i18n="inv_fam_1"></p>
+            <p class="inv-center" data-i18n="inv_and"></p>
+            <p class="inv-center" data-i18n="inv_fam_2"></p>
+
+            <p class="inv-center" data-i18n="inv_invite_line"></p>
+            <p class="inv-names" data-i18n="inv_couple"></p>
+
+            <div class="inv-meta">
+              <p><strong data-i18n="inv_date_label"></strong> <span data-i18n="inv_date"></span></p>
+              <p><strong data-i18n="inv_time_label"></strong> <span data-i18n="inv_time"></span></p>
+            </div>
+
+            <div class="inv-divider" aria-hidden="true"></div>
+
+            <p class="inv-heading" data-i18n="inv_place_title"></p>
+            <p class="inv-center"><strong data-i18n="venue_name"></strong></p>
+            <p class="inv-center" data-i18n="venue_line1"></p>
+            <p class="inv-center" data-i18n="venue_line2"></p>
+
+            <div class="inv-divider" aria-hidden="true"></div>
+
+            <p class="inv-heading" data-i18n="inv_rsvp_title"></p>
+            <p class="inv-center" data-i18n="inv_rsvp_line"></p>
+
+            <div class="inv-contacts">
+              <div class="inv-contact"><span data-i18n="inv_c1_label"></span><a href="tel:+46737353232" class="inv-tel">0737353232</a></div>
+              <div class="inv-contact"><span data-i18n="inv_c2_label"></span><a href="tel:+46704450054" class="inv-tel">0704450054</a></div>
+              <div class="inv-contact"><span data-i18n="inv_c3_label"></span><a href="tel:+46704757144" class="inv-tel">0704757144</a></div>
+            </div>
+
+            <p class="inv-center inv-final" data-i18n="inv_final"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4th section: gallery -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section-title">
+          <div class="overline" data-i18n="gal_overline">Galleri</div>
+          <h2 class="h2" data-i18n="gal_title">Ögonblick av oss</h2>
+        </div>
+
+        <div class="masonry">
+          <figure class="shot tall"><img src="assets/gallery-1.jpeg" alt="Photo 1"></figure>
+          <figure class="shot tall"><img src="assets/gallery-2.jpg" alt="Photo 2"></figure>
+          <figure class="shot"><img src="assets/gallery-3.jpeg" alt="Photo 3"></figure>
+          <figure class="shot"><img src="assets/gallery-4.jpeg" alt="Photo 4"></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5th section: address + map -->
+    <section class="section map" id="map">
+      <div class="container">
+        <div class="section-title">
+          <div class="overline" data-i18n="map_overline">Karta</div>
+          <h2 class="h2" data-i18n="map_title">Vägbeskrivning</h2>
+        </div>
+
+        <div class="map-card">
+          <div class="map-info">
+            <p class="muted">
+              <strong data-i18n="venue_name">Monalisa festvåning</strong><br>
+              <span data-i18n="venue_line1">Klockarvägen 118</span><br>
+              <span data-i18n="venue_line2">151 61 Södertälje</span>
+            </p>
+            <a class="btn btn-solid" target="_blank" rel="noopener noreferrer"
+               href="https://maps.google.com/?q=Monalisa+festv%C3%A5ning+Klockarv%C3%A4gen+118+151+61+S%C3%B6dert%C3%A4lje"
+               data-i18n="map_btn">Öppna i Google Maps</a>
+          </div>
+          <div class="map-frame">
+            <iframe
+              title="Map"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Monalisa%20festv%C3%A5ning%20Klockarv%C3%A4gen%20118%20151%2061%20S%C3%B6dert%C3%A4lje&output=embed"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span data-i18n="footer_line">Moataz & Elaf · 20 juni 2026 · Södertälje</span>
+      <a class="to-top" href="#top" data-i18n="to_top">Till toppen</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
