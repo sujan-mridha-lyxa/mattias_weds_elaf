@@ -3,7 +3,7 @@ const I18N = {
     brand: 'Inbjudan',
     name_1: 'Mattias',
     name_2: 'Elaf',
-    hero_sub: 'MONALISA FESTVÅNING · SÖDERTÄLJE · LÖRDAG 20 JUNI 2026 · 19:00',
+    hero_sub: 'MONALISA FESTVÅNING · SÖDERTÄLJE · LÖRDAG 20 JUNI 2026 · 19.30',
 
     count_overline: 'Nedräkning',
     count_title: 'För vårt nya kapitel',
@@ -29,7 +29,7 @@ const I18N = {
     inv_date_label: 'Datum:',
     inv_date: 'Lördagen den 20 juni 2026',
     inv_time_label: 'Tid:',
-    inv_time: 'kl. 19:00',
+    inv_time: 'kl. 19.30',
 
     inv_place_title: 'Plats',
     venue_name: 'Monalisa festvåning',
@@ -38,7 +38,7 @@ const I18N = {
 
     inv_rsvp_title: 'Bekräfta närvaro',
     inv_rsvp_line: 'Vänligen bekräfta senast den 1/6 och meddela om du kan närvara, så att vi kan planera kvällen på bästa sätt.',
-    inv_c1_label: 'Afaq Sami:',
+    inv_c1_label: 'Wamidh Sami:',
     inv_c2_label: 'Thaer Jeaz:',
     inv_c3_label: 'Mattias:',
 
@@ -58,7 +58,7 @@ const I18N = {
     brand: 'الدعوة',
     name_1: 'معتز',
     name_2: 'ايلاف',
-    hero_sub: 'Monalisa festvåning · Södertälje · السبت 2026/06/20 · 19:00',
+    hero_sub: 'Monalisa festvåning · Södertälje · السبت 2026/06/20 · 19:30',
 
     count_overline: 'العد التنازلي',
     count_title: 'لفصلنا الجديد',
@@ -84,7 +84,7 @@ const I18N = {
     inv_date_label: 'اليوم:',
     inv_date: 'السبت 2026/06/20',
     inv_time_label: 'الساعة:',
-    inv_time: '19:00',
+    inv_time: '19.30',
 
     inv_place_title: 'عنوان القاعة',
     venue_name: 'Monalisa festvåning',
@@ -93,7 +93,7 @@ const I18N = {
 
     inv_rsvp_title: 'تأكيد الحضور',
     inv_rsvp_line: 'عند تعذركم عن الحضور يرجى إعلامنا قبل 06/01 عبر الأرقام',
-    inv_c1_label: 'افاق سامي:',
+    inv_c1_label: 'وميض سامي:',
     inv_c2_label: 'ثائر ابو ايفان:',
     inv_c3_label: 'معتز سامي:',
 
@@ -142,7 +142,7 @@ function initLang(){
 }
 
 function startCountdown(){
-  const target = new Date('2026-06-20T19:00:00');
+  const target = new Date('2026-06-20T19:30:00');
   const elD = document.getElementById('cd_days');
   const elH = document.getElementById('cd_hours');
   const elM = document.getElementById('cd_minutes');
@@ -216,3 +216,5 @@ document.addEventListener('DOMContentLoaded', () => {
   startCountdown();
   initHearts();
 });
+
+

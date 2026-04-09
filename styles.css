@@ -176,9 +176,10 @@ body.lang-ar [data-i18n-rtl="true"]{font-family:"Noto Naskh Arabic", serif}
 
 .hero-title{
   font-family:"Cormorant Garamond", serif;
-  font-size: clamp(3.2rem, 9vw, 7rem);
+  font-size: clamp(4.2rem, 9vw, 7rem);
   line-height: .95;
   margin: 0 0 10px;
+  margin-bottom: 250px;
   font-weight: 600;
   text-shadow: 0 16px 40px rgba(0,0,0,.55);
 }
@@ -447,4 +448,12 @@ body.lang-ar .inv-contact{ direction: rtl; }
 .shot:hover img{
   transform: scale(1.07);
   filter: contrast(1.03) saturate(1.03);
+}
+
+
+.hero-content{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0}
+.hero-lang-toggle{margin-top:22px;pointer-events:auto}
+.topbar{align-items:flex-start}
+@media (max-width: 700px){
+  .hero-lang-toggle{margin-top:18px}
 }
